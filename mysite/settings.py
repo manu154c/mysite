@@ -39,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
     'blog.apps.BlogConfig',
+    'lang_entropy.apps.LangEntropyConfig',
+    'smart_space.apps.SmartSpaceConfig',
+    'context_server.apps.ContextServerConfig',
+    'context_client_0.apps.ContextClient0Config',
+    'data_structures.apps.DataStructuresConfig',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,38 @@
+{% load static %}
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'lang_entropy/bootstrap/css/bootstrap.min.css' %}">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+{% if list_transactions %}
+    <table boder=1>
+    {% for items in list_transactions %}
+        <tr><td>{{ items.items_bought }}</td></tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No transactions are available.</p>
+{% endif %}      
+      
+      <a href="{% url 'lang_entropy:add_items' %}" >New Transaction</a>
+
+    </body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'lang_entropy/jquery-3.5.1.slim.min.js' %}" ></script>
+    <!-- script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script-->
+    <script src="{% static 'lang_entropy/bootstrap/js/bootstrap.min.js' %}"></script>
+  
+</html>

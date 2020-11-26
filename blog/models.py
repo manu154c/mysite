@@ -1,5 +1,14 @@
 from django.db import models
 
+#IntegerField()
+#CharField(max_length=255)
+#DateField()
+#TextField()
+#EmailField()
+
+#ForeignKey(Blog, on_delete=models.CASCADE)
+#ManyToManyField(Author)
+
 class Blog(models.Model):
     Title = models.CharField(max_length=50)
     Discription = models.CharField(max_length=250)

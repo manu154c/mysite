@@ -1,0 +1,5 @@
+    <form action="{% url 'lang_entropy:save' %}" method='post' >
+        {% csrf_token %}
+        <input type='text' name='item' >
+        <button>Add</button>
+    </form>

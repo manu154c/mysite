@@ -1,0 +1,20 @@
+{% if dict_transactions %}
+
+<div>
+    {% for val in ordered_list %}
+        <li>{{ val }}</li>
+    {% endfor %}
+</div>
+<table boder=1>
+    {% for key, val in dict_transactions.items %}
+        <tr><td>{{ key }}</td><td>{{ val }}</td></tr>
+    {% endfor %}
+</table>
+
+{% else %}
+    <p>No transactions are available.</p>
+{% endif %} 
+
+{% load static %}
+
+<img src="{% static 'tree.png' %}"/>
