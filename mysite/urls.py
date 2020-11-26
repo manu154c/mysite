@@ -18,6 +18,11 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('data_structures/', include('data_structures.urls')),
+    path('smart_space/', include('smart_space.urls')),
+    path('context_server/', include('context_server.urls')),
+    path('context_client_0/', include('context_client_0.urls')),
+    path('lang_entropy/', include('lang_entropy.urls')),
     path('blog/', include('blog.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),

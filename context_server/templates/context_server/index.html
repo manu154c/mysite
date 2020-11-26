@@ -1,0 +1,7 @@
+<form action="{% url 'context_server:amr_file_process' %}" method="post">
+{% csrf_token %}
+
+    <input type="text" name="file_location" id="file_location" value="">
+
+<input type="submit" value="Upload_and_Process">
+</form>
